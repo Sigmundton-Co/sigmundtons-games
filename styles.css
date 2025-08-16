@@ -30,6 +30,14 @@ border-radius: 20px;
     border-radius: 20px;
     border:1px solid rgba(17, 255, 37, 0.929);
     width: 50%;
+    float: left;
+    padding: 1px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 body {
