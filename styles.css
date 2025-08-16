@@ -1,0 +1,31 @@
+.title {
+    font-size: 3em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-image: linear-gradient(to right, rgb(0, 172, 0), rgb(0, 0, 0));
+    color: transparent;
+    background-clip: text;
+}
+
+.bodytext {
+    font-size: 1.5em;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    background-image: linear-gradient(to right, rgb(0, 172, 0), rgb(0, 0, 0));
+    color: transparent;
+    background-clip: text;
+}
+
+.sigmundton {
+border-radius: 20px;
+    border:1px solid rgba(17, 255, 37, 0.929);
+    width: 100%;
+    margin: auto;
+    margin-left: auto;
+      margin-right: auto;
+      display: block;
+}
+
+body {
+    background-color: rgb(1, 1, 7);
+}
