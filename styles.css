@@ -40,6 +40,32 @@ border-radius: 20px;
   display: table;
 }
 
+.RG {
+    background: linear-gradient(90deg, rgb(3, 168, 0), rgb(0, 0, 0));
+    border-radius: 10px;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
+
+a:link {
+    color: gray;
+    text-decoration: none;
+}
+
+a:visited { 
+     color: gray;
+  text-decoration: none; 
+} 
+a:hover { 
+     color: gray;
+  text-decoration: none; 
+} 
+a:active { 
+     color: gray;
+  text-decoration: none; 
+}
+
 body {
     background-color: rgb(1, 1, 7);
 }

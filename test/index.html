@@ -1,0 +1,37 @@
+<button onclick="openBlankEmbed(youtubeEmbed)">Open YouTube</button>
+<button onclick="openBlankEmbed(twitchEmbed)">Open Twitch</button>
+<button onclick="openBlankEmbed(customEmbed)">Open Custom</button>
+
+<script>
+// Store each embed snippet in a variable
+const youtubeEmbed = `
+  <iframe width="560" height="315" 
+    src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+    frameborder="0" allowfullscreen>
+  </iframe>
+`;
+
+const twitchEmbed = `
+  <iframe src="https://player.twitch.tv/?channel=twitchpresents&parent=example.com" 
+    frameborder="0" allowfullscreen 
+    width="560" height="315">
+  </iframe>
+`;
+
+const customEmbed = `
+  <div style="color:white; font-size:24px;">Hello from custom embed!</div>
+`;
+
+// Reusable function
+function openBlankEmbed(embedCode) {
+  const win = window.open("about:blank");
+  win.document.write(`
+    <html>
+      <head><title>Embed</title></head>
+      <body style="margin:0; display:flex; justify-content:center; align-items:center; height:100vh; background:#000;">
+        ${embedCode}
+      </body>
+    </html>
+  `);
+}
+</script>
